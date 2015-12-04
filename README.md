@@ -9,6 +9,10 @@ def deps do
   [{:geo_3d_types, "~> 0.1"}]
 end
 ```
+
+## Dependencies
+* [elixir-geo-3d-utils](https://github.com/ttvd/elixir-geo-3d-utils)
+
 ## License
 
 * Copyright Mykola Konyk, 2015

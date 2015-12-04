@@ -1,4 +1,4 @@
-defmodule Geo2d do
+defmodule Geo3d do
 
   @type point3 :: {float, float, float}
 

@@ -17,7 +17,9 @@ defmodule Geo3d.Types.Mixfile do
   end
 
   defp deps do
-    []
+    [
+      {:geo_3d_utils, github: "ttvd/elixir-geo-3d-utils"}
+    ]
   end
 
   def package do

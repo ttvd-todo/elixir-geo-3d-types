@@ -1,5 +1,7 @@
 defmodule Geo3d.Point3 do
 
+  import Geo3d.Utils
+
   @spec create() :: Geo3d.point3
   def create(), do: {0.0, 0.0, 0.0}
 
@@ -18,8 +20,10 @@ defmodule Geo3d.Point3 do
   @spec to_list(Geo3d.point3) :: [float]
   def to_list({x, y, z}), do: [x, y, z]
 
-  #@spec equal?(Geo3d.point3, Geo3d.point3, Geo3d.point3) :: boolean
-  #def equal?({x1, y1, z1}, {x2, y2, z2}), do: equal?(x1, x2) and equal?(y1, y2) and equal?(z1, z2)
+  @spec equal?(Geo3d.point3, Geo3d.point3) :: boolean
+  def equal?({x1, y1, z1}, {x2, y2, z2}) do
+    Geo3d.Utils.equal?(x1, x2) and Geo3d.Utils.equal?(y1, y2) and Geo3d.Utils.equal?(z1, z2)
+  end
 
   @spec zero() :: Geo3d.point3
   def zero(), do: create()

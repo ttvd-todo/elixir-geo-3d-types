@@ -1,0 +1,1 @@
+%{"geo_3d_utils": {:git, "git://github.com/ttvd/elixir-geo-3d-utils.git", "0eb1fc0597980ec61551959d1fdf634eca23381b", []}}
